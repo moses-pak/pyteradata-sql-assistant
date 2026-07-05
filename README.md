@@ -5,20 +5,30 @@ A lightweight, modern take on Teradata SQL Assistant. Two flavors, both standalo
 
 ## Download
 
-Grab the latest from the [**Releases page**](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest), or use these direct links:
+Grab the latest from the [**Releases page**](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest), or use these direct links — **the `.zip` versions are recommended** (they let you skip the SmartScreen warning, see *First run* below):
 
-| App | Download | What it is |
-|---|---|---|
-| 🖥️ Desktop | [PyTeradata-SQL-Assistant-Desktop.exe](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Desktop.exe) | Classic desktop app (query editor, results grid, history, explorer) |
-| 🌐 Browser | [PyTeradata-SQL-Assistant-Web.exe](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Web.exe) | Same features in your browser — running locally on your machine |
+| App | Recommended | Alternative | What it is |
+|---|---|---|---|
+| 🖥️ Desktop | [Desktop .zip](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Desktop.zip) | [.exe](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Desktop.exe) | Classic desktop app (query editor, results grid, history, explorer) |
+| 🌐 Browser | [Web .zip](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Web.zip) | [.exe](https://github.com/moses-pak/pyteradata-sql-assistant/releases/latest/download/PyTeradata-SQL-Assistant-Web.exe) | Same features in your browser — running locally on your machine |
 
 ## First run
 
-1. Double-click the `.exe`. The **first** launch takes ~10 seconds while it unpacks — after that it's fast.
-2. If Windows SmartScreen says *"Windows protected your PC"*: click **More info → Run anyway**.
-   (The exes are unsigned; this warning is expected.)
-3. Browser version: a console window opens (that's the local server — leave it running), and the app
-   opens in your default browser at `http://127.0.0.1:8000`. **Close the console window to quit.**
+**Zip route (no SmartScreen warning):**
+
+1. Download the `.zip`.
+2. **Before extracting:** right-click the zip → **Properties** → check **Unblock** (bottom right) → **OK**.
+   This clears Windows' "downloaded from the internet" flag for everything inside.
+3. Right-click → **Extract All**, open the folder, double-click the `.exe`.
+
+**Exe route:** double-click the downloaded `.exe`; if SmartScreen says *"Windows protected your PC"*,
+click **More info → Run anyway** (the exes are unsigned; the warning is expected).
+
+Notes for both routes:
+
+- The **first** launch takes ~10 seconds while the app unpacks — after that it's fast.
+- Browser version: a console window opens (that's the local server — leave it running), and the app
+  opens in your default browser at `http://127.0.0.1:8000`. **Close the console window to quit.**
 
 ## Connecting to Teradata
 
